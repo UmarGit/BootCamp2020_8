@@ -1,0 +1,44 @@
+.rankingListquiz {
+    text-align: center;
+    height: 76vh;
+    border-radius: 20px !important;
+    max-height: 460px ;
+    margin: 0 0 60px 0;
+}
+
+.questionNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border: 10px solid white;
+    border-radius: 100% !important;
+    position: relative;
+    top: -20px;
+    width: 100px !important;
+    height: 100px !important;
+    background-color: #ea5789 !important;
+}
+
+.av{
+    background-color: #75fa09 !important;
+}
+
+.nav{
+    background-color: #f30655 !important;
+}
+
+.listItemQuestions{
+    padding: 10px;
+}
+
+.listItemAnswers{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    flex-direction: column;
+}
+
+
+.listItemAnswers button, a{
+    margin: 10px 0 !important;
+}

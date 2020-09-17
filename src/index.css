@@ -1,13 +1,70 @@
+@font-face {
+  font-family: 'GT-Walsheim-Pro-Bold';
+  src: local('GT-Walsheim-Pro-Bold'), url(./assets/fonts/GT-Walsheim-Pro-Bold.woff2) format('woff2');
+}
+*{
+  --pink: #f88ad1;
+  --darkpink: #ea5789;
+  --brown: #d97e2d;
+  --blue: #336689;
+  --white: #f3f0ef;
+  --black: #303755;
+  font-family: 'GT-Walsheim-Pro-Bold' !important;
+}
+
 body {
+  overflow: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background: -webkit-radial-gradient(farthest-corner at 180% 0%, var(--darkpink) 70%, var(--white) 70%);
+  background: -o-radial-gradient(farthest-corner at 180% 0%, var(--darkpink) 70%, var(--white) 70%);
+  background: -moz-radial-gradient(farthest-corner at 180% 0%, var(--darkpink) 70%, var(--white) 70%);
+  background: radial-gradient(farthest-corner at 180% 0%, var(--darkpink) 70%, var(--white) 70%);
+  height: 100vh;
+  color: var(--black) !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.MuiBottomNavigationAction-root {
+  padding: 0 !important;
+  max-width: inherit !important;
+  min-width: 0 !important;
+}
+.MuiBottomNavigationAction-label.Mui-selected, .MuiBottomNavigationAction-label  {
+  font-size: 0.8rem !important;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.MuiBottomNavigationAction-root.Mui-selected {
+  color: var(--pink) !important;
+  padding-top: 6px;
+  transition: all 0.2s ease-in-out;
+}
+.MuiBottomNavigationAction-root.Mui-selected svg{
+  transform: scale(1.4) translateY(-10px);
+  background-color: var(--pink);
+  color: white;
+  border-radius: 100%;
+  padding: 6px;
+  transition: all 0.2s ease-in-out;
+}
+.MuiBottomNavigationAction-root.Mui-selected .MuiBottomNavigationAction-label.Mui-selected{
+  transform: scale(1.4) translateY(-4px);
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 400px){
+  .MuiPaper-root h1{
+    font-size: 1.4rem;
+  }
 }

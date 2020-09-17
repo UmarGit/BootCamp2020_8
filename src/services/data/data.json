@@ -1,0 +1,59 @@
+[
+    {
+        "question": "What is the name of Suleman Shah's Son",
+        "option": [
+            "Totakin",
+            "Bamsi",
+            "Turgut",
+            "Ertugrul"
+        ],
+        "correct": "Ertugrul"
+    },
+    {
+        "question": "What is the name of Ertugrul Best Friend",
+        "option": [
+            "Totakin",
+            "Bamsi",
+            "Turgut",
+            "Rehman"
+        ],
+        "correct": "Turgut"
+    },
+    {
+        "question": "What is the name of Ertugrul's Better Half",
+        "option": [
+            "Halimae",
+            "Roshni",
+            "Gokche",
+            "Eicus"
+        ],
+        "correct": "Halimae"
+    },    {
+        "question": "What is the name of Ertugrul's Son",
+        "option": [
+            "Osama",
+            "Osman",
+            "Usman",
+            "Hashim"
+        ],
+        "correct": "Usman"
+    },    {
+        "question": "Name the villain in season 2 of ertugrul ghazi",
+        "option": [
+            "Noyan",
+            "Bamsi",
+            "Turgut",
+            "Nasir"
+        ],
+        "correct": "Noyan"
+    },    {
+        "question": "What is the name of Suleman Shah's Kabila",
+        "option": [
+            "Kayi",
+            "Kaye",
+            "Kae",
+            "Kaeyi"
+        ],
+        "correct": "Kayi"
+    }
+]

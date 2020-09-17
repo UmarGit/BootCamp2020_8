@@ -1,0 +1,72 @@
+.mainProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.rankingListpro {
+    text-align: center;
+    height: 54vh;
+    border-radius: 20px !important;
+    max-height: 800px ;
+    margin-bottom: 100px;
+}
+
+.rankingProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: row-reverse;
+}
+
+.MuiAvatarGroup-avatar {
+    border: 0 !important;
+}
+
+.Position1{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border: 10px solid white;
+    border-radius: 100% !important;
+    position: relative;
+    top: -20px;
+    width: 22vw !important;
+    height: 22vw !important;
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 180px;
+    max-width: 180px;
+    background-color: #ea5789 !important;
+}
+
+.Position1 img{
+    width: 16vw;
+    height: 16vw;
+    max-height: 130px;
+    max-width: 130px;
+}
+
+.listItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: row;
+    height: 7vh;
+    max-height: 80px;
+    margin: 18px 0;
+}
+
+.listimgpro{
+    width: 40%;
+}
+.listimgpro img{
+    width: 12vw;
+    height: 12vw;
+    max-width: 70px;
+    max-height: 70px;
+}
+.listnamepro{
+    width: 60%;
+    text-align: left;
+}

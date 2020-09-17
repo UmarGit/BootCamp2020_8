@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import Navigation from './components/Navigation/Navigation'
+import { AppProvider } from './services/context'
+import {Routes, Route} from 'react-router-dom';
+import Home from './views/Home'
+import Leader from './views/Leader'
+import Quiz from './views/Quiz'
+import QuizAttempt from './views/QuizAttempt'
+import Points from './views/Points'
+import Profile from './views/Profile'
+import ErrorPage from './views/ErrorPage'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <Routes>
+        <Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/leaderboard" element={<Leader />} />
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/quiz/:id/:difficulty" element={<QuizAttempt />} />
+          <Route path="/points/:id" element={<Points />} />
+          <Route path="/profile/:id" element={<Profile />} />
+          <Route path='*' element={<ErrorPage />} />
+        </Route>
+      </Routes>
+      <Navigation />
+    </AppProvider>
   );
 }
 
