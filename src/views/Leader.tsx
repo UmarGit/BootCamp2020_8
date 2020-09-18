@@ -21,8 +21,8 @@ function Leader() {
     const fetchdata = () => {
       var starCountRef = database.ref('leaderboard/');
       starCountRef.on('value', function(snapshot) {
-          var data: any[] = Object.entries(snapshot.val()).map(val=>{return(val[1])}).slice(0,5)
-          settopfive(data.sort((a: Profile,b: Profile)=>{ return( b.quiz.score - a.quiz.score ) }))
+          var data: any[] = Object.entries(snapshot.val()).map(val=>{return(val[1])})
+          settopfive(data.sort((a: Profile,b: Profile)=>{ return( b.quiz.score - a.quiz.score ) }).slice(0,5))
       });
     }
 
